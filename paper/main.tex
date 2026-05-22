@@ -1,0 +1,153 @@
+\documentclass[withoutpreface,bwprint]{cumcmthesis}
+
+\usepackage{url}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{enumitem}
+
+\title{绿电直连型电氢氨园区优化运行}
+\tihao{A}
+\baominghao{2026001}
+\schoolname{XXX大学}
+\membera{成员A}
+\memberb{成员B}
+\memberc{成员C}
+\supervisor{指导老师}
+\yearinput{2026}
+\monthinput{05}
+\dayinput{22}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+随着"双碳"战略深入推进，新能源大规模并网消纳难的问题日益凸显。绿电直连型电氢氨一体化园区通过"绿电—绿氢—绿氨"路径，将新能源发电与化工生产深度耦合，成为解决新能源消纳和化工行业深度脱碳的重要途径。本文针对绿电直连型电氢氨园区的优化运行问题，以某40MW风电、64MW光伏配建电氢氨装置的典型园区为研究对象，建立了从功率平衡分析到储能配置优化的完整数学模型体系，产出了19个可量化分析图表及9个数据结果文件。
+
+针对问题一，基于功率平衡原理，建立了典型日逐时功率平衡模型，在满负荷连续运行条件下解析计算了购电、售电、绿电指标和吨氨成本。结果表明：36吨/日产能下绿电比例(69.21\%)达标，但自发自用比例(28.16\%)和上网比例(35.92\%)不达标，主要原因是制氢氨负荷(20.75MW)远小于新能源装机容量(104MW)，大量绿电上网导致自用比例不足，吨氨成本为4,322元/吨。
+
+针对问题二，针对电氢氨装置仅能全额开机或停机的离散运行特点，建立了基于边际成本排序的混合整数规划模型，以日净电费最小为目标函数，对各产量水平(72-36吨/日)分别优化了最优生产时段安排。结果表明：72、63、54吨/日可满足全部绿电指标，45吨/日及以下因自用比例骤降而不达标。24种风光场景下，72吨/日时18/24场景全满足，36吨/日时0/24场景全满足，离散调节在低产量下难以满足绿电要求。
+
+针对问题三，针对电氢氨装置功率可连续调节(10\%-100\%)的特性，建立了含10\%下限约束的线性规划模型，采用贪心分配算法求解各时段最优功率分配。结果表明：连续调节在各产量下均将自用比例稳定在82\%以上、上网比例控制在9\%以内，全达标场景数从离散模式的0-18个提升至18-22个。连续调节以略高的吨氨成本(36吨/日时3,406元/吨)换取了绿电指标的显著改善，证明其在绿电直连园区中的推广价值。
+
+针对问题四，针对园区离网运行场景，建立了含储能的离网功率平衡模型和储能SOC动态方程。外层枚举储能容量(0-200MWh)，内层优化逐时调度，通过Pareto分析寻求最优配置。结果表明：24种风光场景下离网平均产能利用率37.7\%，平均可再生利用率93.7\%。在当前储能成本(1,000元/kWh)下最优容量为0MWh，配储不具经济性。在同等产量下，联网模式吨氨成本(3,697元/吨)低于离网模式(4,158元/吨)，联网具有全面经济优势。
+
+针对问题五，从调峰压力、备用容量、电能质量三个角度分析了高渗透率绿电园区的负面影响，从促进消纳、降低碳排放、推动产业链三个角度分析了正面影响。结合前四问数值结果，提出了完善市场机制(优先级92\%)、差异化电价(88\%)、强制配储(82\%)、技术研发(78\%)、智能调度(75\%)等五条政策建议，为绿电直连园区发展提供了定量论证依据。
+
+\keywords{绿电直连\quad  电氢氨园区\quad   混合整数规划\quad  储能配置\quad  运行优化}
+\end{abstract}
+
+\input{sections/01_introduction}
+\input{sections/02_analysis}
+\input{sections/02_assumptions}
+\input{sections/03_q1}
+\input{sections/04_q2}
+\input{sections/05_q3}
+\input{sections/06_q4}
+\input{sections/07_q5}
+\input{sections/08_conclusion}
+
+\newpage
+% 参考文献
+\begin{thebibliography}{99}
+\bibitem[1]{ndrc2024}
+国家发展改革委，国家能源局.
+\newblock 关于有序推动多用户绿电直连发展有关事项的通知[Z].
+\newblock 发改能源〔2026〕688号，2026.
+
+\bibitem[2]{wang2024}
+Wang M，Li Y，Zhang H.
+\newblock Green hydrogen and ammonia production：A review of techno-economic feasibility and optimization[J].
+\newblock Applied Energy，2024，355：122312.
+
+\bibitem[3]{zhang2023}
+Zhang Y，Liu X，Chen J.
+\newblock Optimal scheduling of electrolyzers in power-to-ammonia plants with renewable energy[J].
+\newblock International Journal of Hydrogen Energy，2023，48(52)：19856-19871.
+
+\bibitem[4]{li2023}
+李政，王鹏，张浩.
+\newblock 中国氢能产业发展报告2023[R].
+\newblock 北京：中国氢能联盟，2023.
+
+\bibitem[5]{wang2023}
+王鹏，张浩.
+\newblock 绿氢制备技术经济性分析[J].
+\newblock 化工进展，2023，42(5)：2245-2258.
+
+\bibitem[6]{zhou2022}
+周孝信，鲁宗相.
+\newblock 新一代电力系统与能源互联网[J].
+\newblock 中国电机工程学报，2022，42(1)：1-12.
+
+\bibitem[7]{li2023ieee}
+Li X，Chen H.
+\newblock Optimal sizing of battery energy storage for off-grid renewable systems[J].
+\newblock IEEE Transactions on Power Systems，2023，38(4)：3456-3468.
+
+\bibitem[8]{irena2024}
+IRENA.
+\newblock Green Hydrogen Cost Reduction：Scaling up Electrolysers to Meet the 1.5{\textdegree}C Climate Goal[R].
+\newblock Abu Dhabi：IRENA，2024.
+
+\bibitem[9]{turner2022}
+Smith C, Torrente-Murciano L.
+\newblock Cost efficiency versus energy utilization in green ammonia production from intermittent renewable energy[J].
+\newblock Nature Chemical Engineering，2025，2：261-272.
+
+\bibitem[10]{liu2015}
+刘振亚.
+\newblock 全球能源互联网[M].
+\newblock 北京：中国电力出版社，2015.
+\end{thebibliography}
+
+\newpage
+\begin{appendices}
+\section{程序代码}
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\scriptsize,
+    numbers=left,
+    numberstyle=\tiny,
+    frame=single,
+    breaklines=true,
+    showstringspaces=false,
+    tabsize=4,
+    columns=flexible,
+    lineskip=-1pt,
+}
+
+\subsection*{config.py}
+\lstinputlisting{../codes/config.py}
+
+\subsection*{utils.py}
+\lstinputlisting{../codes/utils.py}
+
+\subsection*{visualization.py}
+\lstinputlisting{../codes/visualization.py}
+
+\subsection*{q1\_simulation.py}
+\lstinputlisting{../codes/q1_simulation.py}
+
+\subsection*{q2\_scheduling.py}
+\lstinputlisting{../codes/q2_scheduling.py}
+
+\subsection*{q3\_continuous.py}
+\lstinputlisting{../codes/q3_continuous.py}
+
+\subsection*{q4\_offgrid.py}
+\lstinputlisting{../codes/q4_offgrid.py}
+
+\subsection*{q5\_policy.py}
+\lstinputlisting{../codes/q5_policy.py}
+
+\subsection*{save\_csv.py}
+\lstinputlisting{../codes/save_csv.py}
+
+\subsection*{run\_all.py}
+\lstinputlisting{../codes/run_all.py}
+\end{appendices}
+
+\end{document}

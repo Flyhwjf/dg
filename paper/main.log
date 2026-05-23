@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2026.4.13)  23 MAY 2026 01:56
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2026.4.13)  23 MAY 2026 13:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1402,7 +1402,7 @@ File: ../figures/q3/fig10_q2_vs_q3.pdf Graphic file (type pdf)
 <use ../figures/q3/fig10_q2_vs_q3.pdf>
 File: ../figures/q3/fig12_q3_vs_q2_compliance.pdf Graphic file (type pdf)
 <use ../figures/q3/fig12_q3_vs_q2_compliance.pdf>
- [18]) (./sections/06_q4.tex
+) (./sections/06_q4.tex [18]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\leavevmode@ifvmode' on input line 3.
@@ -1588,24 +1588,24 @@ Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
  (../codes/config.py [28]) [29] (../codes/utils.py [30])
-(../codes/visualization.py [31] [32] [33] [34] [35] [36] [37] [38])
-(../codes/q1_simulation.py [39]
+(../codes/visualization.py [31] [32] [33] [34] [35] [36] [37] [38]) [39]
+(../codes/q1_simulation.py
 Missing character: There is no ✓ (U+2713) in font [lmmono8-regular]:!
 Missing character: There is no ✗ (U+2717) in font [lmmono8-regular]:!
 Missing character: There is no ✓ (U+2713) in font [lmmono8-regular]:!
 Missing character: There is no ✗ (U+2717) in font [lmmono8-regular]:!
 Missing character: There is no ✓ (U+2713) in font [lmmono8-regular]:!
 Missing character: There is no ✗ (U+2717) in font [lmmono8-regular]:!
-) (../codes/q2_scheduling.py [40]
+[40]) (../codes/q2_scheduling.py [41]
 Missing character: There is no ✓ (U+2713) in font [lmmono8-regular]:!
 Missing character: There is no ✗ (U+2717) in font [lmmono8-regular]:!
-[41]) (../codes/q3_continuous.py [42] [43] [44]) (../codes/q4_offgrid.py
-[45] [46] [47] [48]) (../codes/q5_policy.py [49]
+[42]) (../codes/q3_continuous.py [43] [44]) [45] (../codes/q4_offgrid.py
+[46] [47] [48]) [49] (../codes/q5_policy.py
 Missing character: There is no ₂ (U+2082) in font [lmmono8-regular]:!
 Missing character: There is no ₂ (U+2082) in font [lmmono8-regular]:!
-[50]
+[50] [51]
 Missing character: There is no ₂ (U+2082) in font [lmmono8-regular]:!
-) (../codes/save_csv.py [51] [52]) (../codes/run_all.py [53])
+) (../codes/save_csv.py [52]) (../codes/run_all.py [53])
 
 Package caption Warning: Unused \captionsetup[sub] on input line 5.
 See the caption package documentation for explanation.
@@ -1623,12 +1623,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: AD0557F124C952F202B92DB54D0B135D;4042.
  ) 
 Here is how much of TeX's memory you used:
- 24152 strings out of 474773
- 515566 string characters out of 5751944
- 2230842 words of memory out of 5000000
- 45820 multiletter control sequences out of 15000+600000
+ 24172 strings out of 474773
+ 515867 string characters out of 5751944
+ 2212842 words of memory out of 5000000
+ 45840 multiletter control sequences out of 15000+600000
  582977 words of font info for 200 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 108i,16n,111p,435b,3426s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,16n,111p,435b,3424s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (54 pages).
